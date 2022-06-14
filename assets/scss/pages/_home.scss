@@ -140,18 +140,6 @@
                         z-index: 1;
                         position: relative;
                         @include both-center;
-                        @media(max-width: 1199px){
-                            height: 65px;
-                            width: 65px;
-                        }
-                        @media(max-width: 991px){
-                            height: 55px;
-                            width: 55px;
-                        }
-                        @media(max-width: 480px){
-                            height: 45px;
-                            width: 45px;
-                        }
                         img{
                             max-width: 45px;
                             @media(max-width: 991px){
@@ -169,17 +157,8 @@
                         background: lightgray;
                         position: absolute;
                         left: 0;
-                        top: 37px;
+                        top: 8px;
                         z-index: -1;
-                        @media(max-width: 1199px){
-                            top: 32px;
-                        }
-                        @media(max-width: 991px){
-                            top: 27px;
-                        }
-                        @media(max-width: 480px){
-                            top: 22px;
-                        }
                     }
                     &:before {
                         content: '';
@@ -188,18 +167,9 @@
                         background: $primary-color;
                         position: absolute;
                         left: 0;
-                        top: 37px;
+                        top: 8px;
                         z-index: 0;
                         transition: 0.10s all;
-                        @media(max-width: 1199px){
-                            top: 32px;
-                        }
-                        @media(max-width: 991px){
-                            top: 27px;
-                        }
-                        @media(max-width: 480px){
-                            top: 22px;
-                        }
                     }
                 }
             }
