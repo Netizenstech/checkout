@@ -3,7 +3,7 @@
         background: $primary-color;
         padding: 15px 0;
         @media(max-width: 480px){
-            padding: 10px 0;
+            padding: 10px 0 10px 0;
         }
         .checkout-header-inner{
             display: flex;
@@ -13,7 +13,7 @@
             .title{
                 @media(max-width: 480px){
                     width: 100%;
-                    text-align: center;
+                    text-align: center;  
                 }
             }
            
