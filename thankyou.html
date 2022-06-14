@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--------------- Meta tags start --------------->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name=theme-color content="#F24947" />   
+	<meta name="referrer" content="origin">
+	<!--------------- Meta tags end --------------->
+	<!-- Page title -->
+	<title>Checkout</title>
+	<!-- Favicon -->
+	<link href="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/images/favicon.svg" rel="shortcut icon" type="image/x-icon" />
+	<!-- CSS Links -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/css/app.css" />
+</head>
+
+<body class="home-page">
+	<!-- MultiStep Form -->
+	<main class="main-wrapper">
+		<section class="checkout-wrapper">
+			<div class="checkout-header">
+				<div class="container">
+					<div class="checkout-header-inner">
+						<div class="safe-payment">
+							<h6><img src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/images/encryption.svg" alt="Icon"> SSL safe payment</h6>
+						</div>
+						<div class="title">
+							<h5>Secure Payment</h5>
+						</div>
+						<div class="verify">
+							<h6>Verified by <img src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/images/visa-icons.svg" alt="Icon"></h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="checkout-main">
+				<div class="container">
+					<div class="ckform">
+						<!-- progressbar -->
+						<ul id="progressbar">
+							<li class="active"  id="account">
+								<div class="icon">
+									<img src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/images/pricing-plan.svg" alt="Icon">
+								</div>
+								Plan & Pricing
+							</li>
+							<li class="active"  id="personal">
+								<div class="icon">
+									<img src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/images/payment.svg" alt="Icon">
+								</div>
+								Payment & Purchase
+							</li>
+							<li class="active" id="payment">
+								<div class="icon">
+									<img src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/images/onboarding.svg" alt="Icon">
+								</div>
+								Onboarding
+							</li>
+						</ul>
+						<!-- fieldsets -->
+						<fieldset>
+							<div class="onboarding">
+								<h2>Success !</h2>
+								<svg class="check-spinner" viewBox="0 0 100 100" width="100px" height="100px">
+									<defs>
+										<linearGradient id="cs-grad-1" x1="0.5" y1="0" x2="0.5" y2="1">
+											<stop offset="0%" stop-color="hsl(240,14%,96%)" />
+											<stop offset="100%" stop-color="hsl(240,14%,96%)" />
+										</linearGradient>
+										<linearGradient id="cs-grad-2a" x1="0.5" y1="0" x2="0.5" y2="1" gradientTransform="rotate(90,0.5,0.5)">
+											<stop offset="0%" stop-color="hsl(232,67%,32%)" />
+											<stop offset="100%" stop-color="hsl(232,67%,32%)" />
+										</linearGradient>
+										<linearGradient id="cs-grad-2b" x1="0.5" y1="0" x2="0.5" y2="1">
+											<stop offset="0%" stop-color="hsl(232,67%,32%)" />
+											<stop offset="100%" stop-color="hsl(232,67%,32%)" />
+										</linearGradient>
+									</defs>
+									<circle class="check-spinner__circle" cx="50" cy="50" r="0" fill="url(#cs-grad-1)" />
+									<circle class="check-spinner__worm-a" cx="50" cy="50" r="46" fill="none" stroke="url(#cs-grad-2a)" stroke-width="8" stroke-linecap="round" stroke-dasharray="72.2 216.8" stroke-dashoffset="36.1" transform="rotate(-90,50,50)" />
+									<path class="check-spinner__worm-b" d="M 17.473 17.473 C 25.797 9.15 37.297 4 50 4 C 75.4 4 96 24.6 96 50 C 96 75.4 75.4 96 50 96 C 24.6 96 4 75.4 4 50 C 4 44.253 6.909 36.33 12.5 35 C 21.269 32.913 35 50 35 50 L 45 60 L 65 40" fill="none" stroke="url(#cs-grad-2b)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0 0 72.2 341.3" />
+								</svg>
+								<h6>Successfully Payment</h6>
+								
+								<a href="index.html" class="action-button">Back To Home</a>
+							</div>
+							<!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous"/> -->
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/js/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/js/app.js"></script>
+
+</body>
+</html>

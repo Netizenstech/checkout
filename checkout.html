@@ -41,13 +41,13 @@
 					<div class="ckform">
 						<!-- progressbar -->
 						<ul id="progressbar">
-							<li class="active" id="account">
+							<li class="active"  id="account">
 								<div class="icon">
 									<img src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/images/pricing-plan.svg" alt="Icon">
 								</div>
 								Plan & Pricing
 							</li>
-							<li id="personal">
+							<li class="active" id="personal">
 								<div class="icon">
 									<img src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/images/payment.svg" alt="Icon">
 								</div>
@@ -62,13 +62,13 @@
 						</ul>
 						<!-- fieldsets -->
 						<fieldset>
-							<div class="plan-pricing">
-								<div class="row justify-content-center gx-5">
+							<div class="plan-pricing payments">
+								<div class="row gx-5">
 									<div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-										<div class="account-form ">
+										<div class="account-form">
 											<div class="account-header">
 												<div class="title">
-													<h2>Information</h2>
+													<h2>Payment <img src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/images/payments.svg" alt="Icon"> </h2>
 												</div>
 											</div>
 											<div class="account-content">
@@ -76,44 +76,27 @@
 													<div class="form-row">
 														<div class="form-group col-12">
 															<input type="text" name="firstname" class="user-input"
-																placeholder="First name" required>
+																placeholder="Carn number" required>
 														</div>
 														<div class="form-group col-12">
-															<input type="text" name="lastname" class="user-input"
-																placeholder="Last name" required>
+															<input type="date" name="lastname" class="user-input"
+																placeholder="EXP date" required>
 														</div>
 														<div class="form-group col-12">
-															<input type="email" name="email" class="user-input" placeholder="E-mail"
+															<input type="email" name="email" class="user-input" placeholder="Card holder"
 																required="">
-														</div>
-														<div class="form-group col-12">
-															<input type="phone" name="phone" class="user-input" placeholder="Phone"
-																required="">
-														</div>
-														<div class="form-group col-12">
-															<select class="user-input form-select form-select-sm" aria-label=".form-select-sm example">
-																<option selected>Select State</option>
-																<option value="1">One</option>
-																<option value="2">Two</option>
-																<option value="3">Three</option>
-															</select>
-														</div>
-														<div class="row">
-															<div class="col-sm-6">
-																<div class="form-group">
-																	<input type="text" name="zipcode" class="user-input"
-																		placeholder="Zip code" required="">
-																</div>
-															</div>
-															<div class="col-sm-6">
-																<div class="form-group">
-																	<input type="text" name="city" class="user-input" placeholder="City"
-																		required="">
-																</div>
-															</div>
 														</div>
 													</div>
-													<a href="checkout.html" class="next action-button">Continue</a>
+													<div class="row">
+														<div class="form-group col-sm-10 col-9">
+															<input type="text" name="state" class="user-input" placeholder="CVV"
+																required="">
+														</div>
+														<div class="form-group col-sm-2 col-3 align-self-center">
+															<img width="50" src="https://cdn.jsdelivr.net/gh/Netizenstech/checkout/assets/images/cvv.svg" alt="">
+														</div>
+													</div>
+													<a href="thankyou.html" class="next action-button">Pay Now</a>
 												</form>
 											</div>
 										</div>
