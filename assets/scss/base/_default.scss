@@ -1,0 +1,100 @@
+.main-wrapper {
+    flex: 1 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    font-weight: normal;
+}
+html {
+    height: 100%;
+}
+p{
+    @media(max-width: 767px){
+        font-size: 15px;
+    }
+}
+
+form {
+    label {
+        font-size: 15px;
+        color: #282828;
+    }
+    textarea {
+        min-height: 100px;
+        max-height: 150px;
+    }
+    .user-input {
+        height: 50px;
+        padding: 10px 15px;
+        color: $primary-color;
+        background-color: $white-color;
+        border: 1px solid rgba(37, 51, 92, 0.36);
+        box-shadow: 0px 4px 18px rgba(37, 51, 92, 0.11);
+        display: inline-block;
+        font-size: 14px;
+        width: 100%;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        -webkit-appearance: none;
+        position: relative;
+        line-height: 1;
+        transition: 0.3s all;
+        border-radius: 0;
+        @media(max-width: 480px){
+            height: 48px;
+        }
+        &:focus {
+            outline: none;
+            border: 1.5px solid $primary-color;
+        }
+        &::-webkit-input-placeholder {
+            font-family: $secondary-font !important;
+            font-size: 15px;
+            line-height: 20px;
+            color: rgba(67, 52, 52, 0.35) !important;
+        }
+        &.form-select{
+            color: rgba(67, 52, 52, 0.35);
+            option{
+                color: $primary-color;
+            }
+        }
+    }
+    .form-group {
+        position: relative;
+        margin-bottom: 25px;
+        line-height: 0;
+        @media(max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+    .my-button{
+        width: 100%;
+    }
+}
+input[type="date"]{
+    color: rgba(67, 52, 52, 0.35)
+}
+.po-rl {
+    position: relative;
+}
+.lh-0{
+    line-height: 0;
+}
+.of-h {
+    overflow: hidden;
+}
+input,textarea,select {
+    &:-webkit-autofill{
+        -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+        -webkit-text-fill-color: $primary-color !important;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+}

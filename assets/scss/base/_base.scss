@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src:url('../fonts/poppins/Poppins-Variable.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Variable.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Variable.svg#Poppins-Variable') format('svg'),
+        url('../fonts/poppins/Poppins-Variable.eot'),
+        url('../fonts/poppins/Poppins-Variable.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins/Poppins-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $secondary-font;
+    background: $white-color;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: $secondary-font;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+a:hover {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+}
