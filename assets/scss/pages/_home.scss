@@ -249,7 +249,7 @@
                         position: relative;
                         border-left: 1px solid #e1e1e1;
                         &:before{
-                            width: 100%;
+                            width: 1000%;
                             height: 100%;
                             content: "";
                             position: absolute;
@@ -258,7 +258,7 @@
                             background: #fafafa;
                             z-index: -1;
                             @media(max-width: 991px){
-                                display: none;
+                                left: -50%;
                             }
                         }
                         @media(max-width: 991px){
